@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LT_Selenium" parallel="tests" configfailurepolicy="continue">
+	
+    <test thread-count="3" name="Chrome on Windows 10">
+        <parameter name="browserVersion" value="128.0" />
+        <parameter name="platform" value="Windows 10" />
+        <parameter name="username" value="vaibhavkkute" />
+        <parameter name="access_key" value="LT_puVK3H0sDdDhOAVw3JGcDx3IyTv24hU8WyRDrUtbswP0CE4" />
+        <classes>
+            <class name="LambdaTest.LT_Selenium.window_10_Chrome_Selenium" />
+        </classes>
+    </test>  
+ 
+    <test thread-count="3" name="Edge on macOS Ventura">
+        <parameter name="browserVersion" value="127.0" />
+        <parameter name="platform" value="macOS Ventura" />
+        <parameter name="username" value="vaibhavkkute" />
+        <parameter name="access_key" value="LT_puVK3H0sDdDhOAVw3JGcDx3IyTv24hU8WyRDrUtbswP0CE4" />
+        <classes>
+            <class name="LambdaTest.LT_Selenium.mac_Edge_Selenium" />
+        </classes>
+      </test>
+      
+   <test thread-count="3" name="Internet Explorer on Windows 10">
+        <parameter name="browserVersion" value="latest" />
+        <parameter name="platform" value="Windows 10" />
+        <parameter name="username" value="vaibhavkkute" />
+        <parameter name="access_key" value="LT_puVK3H0sDdDhOAVw3JGcDx3IyTv24hU8WyRDrUtbswP0CE4" />
+        <classes>
+            <class name="LambdaTest.LT_Selenium.windows_10_IE_Selenium" />
+        </classes>
+   
+    </test> 
+
+    <test thread-count="3" name="Firefox on Windows 11">
+        <parameter name="browserVersion" value="latest" />
+        <parameter name="platform" value="Windows 11" />
+        <parameter name="username" value="vaibhavkkute" />
+        <parameter name="access_key" value="LT_puVK3H0sDdDhOAVw3JGcDx3IyTv24hU8WyRDrUtbswP0CE4" />
+        <classes>
+            <class name="LambdaTest.LT_Selenium.window_10_FFox_Selenium" />
+        </classes>
+    </test>
+    
+</suite>
